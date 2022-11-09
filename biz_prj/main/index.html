@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> gahyun's interior shop</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <style>
+        .nav{
+            height: 70px;
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+    
+        }
+        .nav-right-items{
+            display: flex;
+            margin-left: auto;
+        }
+        .nav-item{
+            margin-left: 30px;
+        }
+        .company-name{
+            font-size: 40px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        *{margin: 0; padding: 0;}
+ 
+ body{
+     padding: 30px;
+     background-color: ivory;
+ }
+  
+ /* header 영역  */
+ header{ padding: 5px;}
+  
+ header a{text-decoration: none; color: #333333;}
+  
+ /* nav 영역 */
+ nav{margin-top: 10px; margin-bottom: 20px;}
+  
+ nav ul{
+     list-style: none;
+     border-top: 1px solid black;
+     border-bottom: 1px solid black;
+     text-align: center;
+ }
+  
+ nav ul li{
+     display: inline;
+     letter-spacing: .3em;
+     margin-left: 2em;
+ }
+  
+ nav ul li a{
+     text-decoration: none;
+     color: black;
+     line-height: 3em;
+     text-transform: uppercase;
+ }
+  
+ nav ul li a:hover{ text-decoration: underline;}
+  
+ /* 왼쪽 사이드 메뉴 */
+ aside#left{
+     float: left;
+     width: 10em;
+     margin-right: 1em;
+ }
+  
+ aside#left ul{ list-style: none}
+  
+ aside#left ul li{
+     background-color: cadetblue;
+     padding: 10px 15px;
+     border-bottom: 1px solid black;
+ }
+  
+ aside#left ul li a{
+     color: white;
+     text-decoration: none;
+ }
+  
+ aside#left ul li:hover{
+     background-color:darkcyan;
+ }
+  
+ aside#main{
+     text-align: center ;
+ }
+  
+ /* 가운데 본문 영역 */
+ section#main{
+     float: left;
+     font-size: 40px;
+ }
+  
+ /* 오른쪽 사이드 메뉴 */
+ aside#right{
+     float: right;
+     padding: 10px;
+     width: 12em;
+ }
+  
+  
+ aside#right #shopcart{
+     margin-bottom: 30px;
+ }
+ aside#right #login input{
+     margin-bottom: 5px;
+ }
+  
+ /* footer영역 */
+ footer{
+     clear: both;
+     background-color: cadetblue;
+     color: white;
+     text-align: center;
+     padding: 1em 0px;
+ }
+  
+  </style>
+</h1>
+</header>
+</head>
+
+<body>
+ <div class="nav">
+    <div class="company-name">
+   GAHYUN'S INTERIOR
+    </div>
+   <div class="nav-right-items">
+    <div class="nav-item">Home</div>
+    <div class="nav-item">My Account</div>
+    <div class="nav-item">Contacts</div>
+   </div>
+  </div>
+
+<aside id="left">
+    <h4>category</h4>
+    <ul>
+        <li><a href="./computer.html" target="iframe1">가구</a></li>
+        <li><a href="./wallpaper.html" target="iframe1">벽지</a></li>
+        <li><a href="./props.html" target="iframe1">소품</a></li>
+        <li><a href="./kitchen.html" target="iframe1">주방용품</a></li>
+    </ul>
+</aside>
+<section id="main">
+    simple & mood interior shop
+   <br>
+  <img src="interior1.jpg" width="300" height="300">
+  <img src="interior2.jpg" width="300" height="300">
+  <img src="interior5.jpg" width="300" height="300"> <br>
+ <img src="interior3.jpg" width="300" height="300">
+  <img src="interior4.jpg" width="300" height="300">
+  <img src="interior6.jpg" width="300" height="300">
+  
+  
+
+</section>
+<aside id="right">
+    <div id="shopcart">
+        <h4>Shopping Cart</h4>
+        <a href="./shopcart.html">쇼핑카트 보기</a>
+    </div>
+
+    <div id="login">
+        <h4>Log In</h4>
+        <form action="./login.php" method="POST">
+            아이디
+            <input type="text"><br>
+            패스워드
+            <input type="password"><br>
+            <input type="submit" value="로그인">
+            <a href="./register.html" target="_blank">회원가입</a>
+        </form>
+    </div>
+</aside>
+<br>
+
+
+
+
+<footer>
+    문의: 010-0000-0000 <br>
+    gahyun1031@naver.com
+   
+  
+
+</footer>
+
+</body>
+</html>
